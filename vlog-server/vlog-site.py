@@ -7,7 +7,7 @@ from database_setup import Base, Category, Article
 
 app = Flask(__name__)
 
-engine = create_engine('sqlite:///vlogsite.db')
+engine = create_engine('postgresql:///vlogsite.db')
 Base.metadata.bind = engine
 
 DBSession = sessionmaker(bind=engine)

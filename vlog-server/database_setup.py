@@ -27,7 +27,7 @@ class Article(Base):
     category = relationship(Category)
 
 
-engine = create_engine('sqlite:///vlogsite.db')
+engine = create_engine('postgresql:///vlogsite.db')
 
 
 Base.metadata.create_all(engine)
