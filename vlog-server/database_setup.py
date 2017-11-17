@@ -27,7 +27,7 @@ class Article(Base):
     category = relationship(Category)
 
 
-engine = create_engine('postgresql:///vlogsite.db')
+engine = create_engine(os.environ.get('DATABASE_URL'))
 
 
 Base.metadata.create_all(engine)
