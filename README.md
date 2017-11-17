@@ -1,5 +1,5 @@
 # heroku-cspectra
-run cspectra on heroku
+
 Reason to stop maintaining this project:
 Heroku requires using postgresql instead of sqlite, needs to 
 store username and password of the postgresql database in the 
