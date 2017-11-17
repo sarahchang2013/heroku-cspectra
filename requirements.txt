@@ -1,2 +1,2 @@
-python-sqlalchemy
+flask-sqlalchemy
 flask==0.9
