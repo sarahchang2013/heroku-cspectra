@@ -1,0 +1,2 @@
+python-sqlalchemy
+flask==0.9

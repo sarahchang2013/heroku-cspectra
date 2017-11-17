@@ -1,0 +1,21 @@
+<html>
+	<head>
+		<title>Cspectra</title>
+		
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+		
+		<link rel=stylesheet type=text/css href="{{ url_for('static', filename='styles.css') }}">
+	</head>
+	<body>
+		<div class = 'pane'>
+			<h1>Cspectra</h1>
+
+			{% for article in articles %}
+
+			<a href = "{{url_for('showArticle', category_id = article.category_id, article_id = article.id, slug = article.slug)}}"> <p>{{article.title}}</p></a>
+
+			{% endfor %}
+		</div>
+	</body>
+</html>
