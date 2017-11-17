@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 import os
 from flask import Flask, render_template, request, redirect, jsonify, url_for
-from flask-sqlalchemy import create_engine
-from flask-sqlalchemy.orm import sessionmaker
+from sqlalchemy import create_engine
+from sqlalchemy.orm import sessionmaker
 from database_setup import Base, Category, Article
 
 app = Flask(__name__)
