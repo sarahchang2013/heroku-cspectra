@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+import os
 from flask import Flask, render_template, request, redirect, jsonify, url_for
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
@@ -32,4 +33,5 @@ def showArticle(category_id, article_id, slug):
 
 if __name__ == '__main__':
     app.debug = True
-    app.run(host='0.0.0.0', port=5000)
+    port = int(os.environ.get('PORT',8000))
+    app.run(host='', port)
