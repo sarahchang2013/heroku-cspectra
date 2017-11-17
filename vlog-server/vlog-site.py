@@ -34,4 +34,4 @@ def showArticle(category_id, article_id, slug):
 if __name__ == '__main__':
     app.debug = True
     port = int(os.environ.get('PORT',8000))
-    app.run(host='', port)
+    app.run(host='0.0.0.0', port=port)
