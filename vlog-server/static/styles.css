@@ -53,3 +53,7 @@ a {
 	color: #f2f2f2;
 	font-size: .6em;
 }
+
+.title {
+	background: linear-gradient(to right,  #e3f4b7, #f4d0c6);
+}
